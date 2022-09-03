@@ -14,7 +14,7 @@ var x = 5
 console.log(x--)
 console.log(x);
 
-var idade = '28'
+var idade = '16'
 var somaIdade = 5;
 
 console.log (idade)
