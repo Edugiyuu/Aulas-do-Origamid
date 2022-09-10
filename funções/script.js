@@ -37,3 +37,15 @@ function imc (peso,altura) {
     const imc = peso / (altura **2)
     console.log(imc);
 }
+
+im2 (20, 1.8); //undefinied
+
+console.log(imc2 (1000,1.80))
+
+
+function terceiraIdade (idade) {
+    console.log (idade)
+
+}
+
+terceiraIdade (60)
