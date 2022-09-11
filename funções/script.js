@@ -44,8 +44,19 @@ console.log(imc2 (1000,1.80))
 
 
 function terceiraIdade (idade) {
-    console.log (idade)
-
+    console.log (typeof idade);
+    if (typeof idade !== 'number'){
+        return 'Por favor preencha um número'
+    } else if (idade >= 60){
+        return true;
+    } else {
+        return false;
+    }
 }
 
-terceiraIdade (60)
+console.log (terceiraIdade(60))
+
+function faltaVisitar(paisesVisitados){
+    var totalPaises = 193;
+    return `Faltam visitar`
+}
