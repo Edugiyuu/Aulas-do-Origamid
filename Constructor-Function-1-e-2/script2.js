@@ -9,17 +9,18 @@
     }
 } */
 
-function Dom() {
-    this.seletor = seletor
-    this.element= function(){
-        return document.querySelector(this.seletor);
-    },
-    ativar(){
+
+function Dom () {
+    this.element = function(){
+        return document.querySelector(seletor);
+    }
+    this.ativar= function(){
         this.element().classList.add('ativar');
     }
 }
 
-Dom.ativar();
+ const li = new Dom('li');
+ const ul = new Dom('ul');
 
-Dom.seletor = 'ul'
-Dom.ativar
+ const lastLi = new Dom('li:last-child');
+ lastLi.ativar('ativar');
