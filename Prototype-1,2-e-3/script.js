@@ -24,5 +24,16 @@ Pessoa.prototype.nadar = function () {
 }
 const andre = new Pessoa('Andre',28);
 
-console.log(Pessoa.prototype);
-console.log(andre.prototype);
+// console.log(Pessoa.prototype);
+// console.log(andre.prototype);
+
+const pais ='Brasil'
+const cidade = new String('Rio')
+
+const listaAnimais = ['Cachorro', 'Gato', 'Cavalo']
+
+
+const lista = document.querySelectorAll('li');
+
+//Transforma em uma array
+const listaArray = Array.prototype.slice.call(lista)
