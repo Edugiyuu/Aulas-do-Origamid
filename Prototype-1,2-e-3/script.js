@@ -36,4 +36,13 @@ const listaAnimais = ['Cachorro', 'Gato', 'Cavalo']
 const lista = document.querySelectorAll('li');
 
 //Transforma em uma array
-const listaArray = Array.prototype.slice.call(lista)
+const listaArray1 = Array.prototype.slice.call(lista)
+const listaArray2 = Array.from(lista);
+
+Carro = {
+    marca: 'Ford',
+    preco: 2000,
+    andar(){
+        return 'Oi';
+    }
+}
