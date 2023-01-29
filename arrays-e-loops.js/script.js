@@ -28,7 +28,7 @@ frutas.forEach(function(){
 })
 
 var numero = 0;
-varmaximo = 50;
+var maximo = 50;
 for(;numero < maximo;){
     console.log(numero);
     numero++;
