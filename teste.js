@@ -118,7 +118,7 @@ console.log(smash(["Ola" ,"Eu" ,"sou" ,"o" ,"Edu"]));  */
   //------------------------------------------------------------------------------------
 
 
-  function monkeyCount(n) {
+/*   function monkeyCount(n) {
 
     const novoNum = []
     for(let i = 0; i <= n;i++){
@@ -127,4 +127,27 @@ console.log(smash(["Ola" ,"Eu" ,"sou" ,"o" ,"Edu"]));  */
     return novoNum
   }
 
-  console.log(monkeyCount(5));
+  console.log(monkeyCount(5)); */
+
+  //----------------------------------------------------------------------------------
+
+  //funcionou meio estranho
+
+   function well(x){
+    let contadorDeGood = 0
+
+    for (let i = 0; i < x.length; i++) {
+      if (x[i] === 'good') {
+        console.log(contadorDeGood += 1 ); 
+      }
+    }
+
+    if(contadorDeGood === 0){
+      return 'Fail!'
+    }else if (contadorDeGood <= 2){
+      return 'Publish!'
+    }else if (contadorDeGood < 6) {
+      return 'I smell a series!'
+    }
+  }
+ console.log(well(["bad","good","bad","bad","good","good"])); 
