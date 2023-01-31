@@ -133,7 +133,7 @@ console.log(smash(["Ola" ,"Eu" ,"sou" ,"o" ,"Edu"]));  */
 
   //funcionou meio estranho
 
-   function well(x){
+/*    function well(x){
     let contadorDeGood = 0
 
     for (let i = 0; i < x.length; i++) {
@@ -150,4 +150,47 @@ console.log(smash(["Ola" ,"Eu" ,"sou" ,"o" ,"Edu"]));  */
       return 'I smell a series!'
     }
   }
- console.log(well(["bad","good","bad","bad","good","good"])); 
+ console.log(well(["bad","good","bad","bad","good","good"]));  */
+
+//--------------------------------------------------------------------------------
+
+/*  function fakeBin(x){
+
+  let totalbinario = ''
+
+  for (let i = 0; i < x.length;i++){
+   if (x[i] < 5) {
+    totalbinario += '0'
+   }else{
+    totalbinario += '1'
+   }
+  }
+  return totalbinario
+} 
+
+console.log(fakeBin('165409'));
+ */
+
+/* const nome ='Eduardo'
+
+  for(let i = 0; i < nome.length;i++){
+    console.log(nome[i],i);
+  }  */
+
+  //-------------------------------------------------------------------------
+ 
+  function likeOrDislike(buttons) {
+
+    let valorAtual = 'Nothing'
+  
+    for(let i = 0; i < buttons.length; i++){
+      if (buttons[i] === valorAtual) {
+        valorAtual = 'Nothing'
+      }else{
+        valorAtual = buttons[i]
+      }
+    }
+    return valorAtual
+  }
+
+  console.log(likeOrDislike(['Like','Dislike','Dislike','Like']));
