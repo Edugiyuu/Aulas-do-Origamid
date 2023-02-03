@@ -52,17 +52,18 @@ function findNeedle(array) {
 
 //------------------------------------------------------------------------------------
 
-/*   const array2 = ["Ola" ,"Eu" ,"sou" ,"o" ,"Edu"]
-  const palavras = ''
+/*    const array2 = ["Ola" ,"Eu" ,"sou" ,"o" ,"Edu"]
+  var palavras = ''
 
   function smash (words) {
     for(let index = 0; index < words.length; index++){
-      return (words + palavras);
+      palavras += `${words[index]} `;
     }
+    return palavras 
 }
-(Nota: O replace não funciona)
+//(Nota: O replace não funciona)
 
-console.log(smash(["Ola" ,"Eu" ,"sou" ,"o" ,"Edu"]));  */
+console.log(smash(["Ola" ,"Eu" ,"sou" ,"o" ,"Edu"]));  */ 
 
 //---------------------------------------------------------------------------------------
 
@@ -78,15 +79,15 @@ console.log(smash(["Ola" ,"Eu" ,"sou" ,"o" ,"Edu"]));  */
 
   //--------------------------------------------------------------------------------------
     
-/*   function duckDuckGoose(players, goose) {
+  function duckDuckGoose(players, goose) {
     const Player ={
-        name:'name: '
+        name:''
     }
 
     for(let index = 0; index < players.length; index++){
         return Player.name + players[goose]
     }
-  } */
+  } 
  
  
 /*   function duckDuckGoose(players, goose) {
@@ -96,24 +97,24 @@ console.log(smash(["Ola" ,"Eu" ,"sou" ,"o" ,"Edu"]));  */
     }
   } */
 
-  //console.log(duckDuckGoose(['Edu','Alice','João','Maria'],0));
+  console.log(duckDuckGoose(['A','B','C','D'],2));
 
   //-------------------------------------------------------------------------------------
   
 
-/*   function warnTheSheep(queue) {
+/*    function warnTheSheep(queue) {
 
     for(let i = 0 ; i < queue.length; i++){
 
       if(queue.length -1 === 'wolf'){
         return ("Pls go away and stop eating my sheep" );
       }else{
-        return (`Oi! Sheep number ${i}! You are about to be eaten by a wolf!`);
+        return (`Oi! Sheep number ${i}! You are about to be eate+n by a wolf!`);
       }
     }
   }
 
-  console.log(warnTheSheep(["sheep", 'sheep',"wolf"])); */
+  console.log(warnTheSheep(["sheep", 'sheep',"wolf"]));  */
 
   //------------------------------------------------------------------------------------
 
@@ -133,7 +134,7 @@ console.log(smash(["Ola" ,"Eu" ,"sou" ,"o" ,"Edu"]));  */
 
   //funcionou meio estranho
 
-/*    function well(x){
+/*     function well(x){
     let contadorDeGood = 0
 
     for (let i = 0; i < x.length; i++) {
@@ -146,11 +147,11 @@ console.log(smash(["Ola" ,"Eu" ,"sou" ,"o" ,"Edu"]));  */
       return 'Fail!'
     }else if (contadorDeGood <= 2){
       return 'Publish!'
-    }else if (contadorDeGood < 6) {
+    }else if (contadorDeGood ) {
       return 'I smell a series!'
     }
   }
- console.log(well(["bad","good","bad","bad","good","good"]));  */
+ console.log(well(["bad","good","bad","bad","good","good"]));   */
 
 //--------------------------------------------------------------------------------
 
@@ -179,7 +180,7 @@ console.log(fakeBin('165409'));
 
   //-------------------------------------------------------------------------
  
-  function likeOrDislike(buttons) {
+/*   function likeOrDislike(buttons) {
 
     let valorAtual = 'Nothing'
   
@@ -193,4 +194,31 @@ console.log(fakeBin('165409'));
     return valorAtual
   }
 
-  console.log(likeOrDislike(['Like','Dislike','Dislike','Like']));
+  console.log(likeOrDislike(['Like','Dislike','Dislike','Like'])); */
+
+  //------------------------------------------------------------------------
+// funcionou no codewars mas não funcionou
+/*   function countSheeps(arrayOfSheep) {
+  let contador = 0
+  
+  for (let i = 0;i < arrayOfSheep.length; i++){
+    if (arrayOfSheep[i] === true) {
+      contador += 1
+    }
+  }
+  return contador
+}
+
+console.log(countSheeps[true,false,true,true,false,true]);
+ */
+
+/* const trues = [true,false,true,false,false,true]
+let contador2 = 0
+
+for (let i = 0; i < trues.length; i++) {
+  if (trues[i]===true) {
+    contador2 +=1
+  }
+}
+
+console.log(contador2); */
