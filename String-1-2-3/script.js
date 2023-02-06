@@ -26,3 +26,40 @@ const transacao2 = 'Depósito de fornecedor';
 const transacao3 = 'Taxa de camisas';
 
 console.log(transacao1.slice(-5));
+
+console.log(fruta.lastIndexOf('na'));
+
+const preco = 'R$ 99,00';
+
+const listaPrecos = ['R$ 99', 'R$ 199','R$ 12000'];
+
+listaPrecos.forEach((item) =>{
+    console.log(item.padStart(10));
+})
+
+const frase2 = 'ta'
+
+frase2.repeat(5)
+
+let listaItens = 'Camisas Bonés Calças Bermudas Vestidos Saias';
+listaItens = listaItens.replace(/[ ]+/g, ', ');
+
+console.log(listaItens);
+const arrayLista = listaItens.split('l')
+
+console.log(arrayLista);
+
+const htmlText = '<div>O melhor item</div><div>A melhor lista</div>';
+const htmlArray = htmlText.split('div')
+const novoHtml = htmlArray.join('section')
+
+console.log(htmlText);
+console.log(htmlArray);
+
+const frutasArray = ['Banana','Melancia','Laranja']
+
+const sexo1 = 'Feminino';
+const sexo2 = 'feminino';
+const sexo3 = 'FEMININO';
+
+console.log(sexo1.toUpperCase() === 'FEMININO');
