@@ -79,16 +79,16 @@ console.log(smash(["Ola" ,"Eu" ,"sou" ,"o" ,"Edu"]));  */
 
   //--------------------------------------------------------------------------------------
     
-/*   function duckDuckGoose(players, goose) {
-    const Player ={
-        name:''
-    }
+  function duckDuckGoose(players, goose) {
 
     for(let index = 0; index < players.length; index++){
-        return Player.name + players[goose]
+        if (goose === 1) {
+          
+        }
+      return players[goose].name
     }
-  } 
-  */
+  }
+  
  
 /*   function duckDuckGoose(players, goose) {
     for(let index = 0; index < players.length; index++){
@@ -97,7 +97,8 @@ console.log(smash(["Ola" ,"Eu" ,"sou" ,"o" ,"Edu"]));  */
     }
   } */
 
-  //console.log(duckDuckGoose(['A','B','C','D'],2));
+  //console.log(duckDuckGoose(['A','B','C','D'],1));
+  console.assert(duckDuckGoose(['A','B','C','D'],1),"A")
 
   //-------------------------------------------------------------------------------------
   
@@ -134,7 +135,7 @@ console.log(smash(["Ola" ,"Eu" ,"sou" ,"o" ,"Edu"]));  */
 
   //funcionou meio estranho
 
-/*     function well(x){
+     function well(x){
     let contadorDeGood = 0
 
     for (let i = 0; i < x.length; i++) {
@@ -151,7 +152,7 @@ console.log(smash(["Ola" ,"Eu" ,"sou" ,"o" ,"Edu"]));  */
       return 'I smell a series!'
     }
   }
- console.log(well(["bad","good","bad","bad","good","good"]));   */
+ console.log(well(["bad","good","bad","bad","good","good"]));   
 
 //--------------------------------------------------------------------------------
 
@@ -180,7 +181,7 @@ console.log(fakeBin('165409'));
 
   //-------------------------------------------------------------------------
  
-   function likeOrDislike(buttons) {
+/*    function likeOrDislike(buttons) {
 
     let valorAtual = 'Nothing'
   
@@ -194,7 +195,7 @@ console.log(fakeBin('165409'));
     return valorAtual
   }
 
-  console.log(likeOrDislike(['Like','Dislike','Dislike','Like'])); 
+  console.log(likeOrDislike(['Like','Dislike','Dislike','Like']));  */
 
   //------------------------------------------------------------------------
 // funcionou no codewars mas não funcionou
