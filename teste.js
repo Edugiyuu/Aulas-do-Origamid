@@ -263,10 +263,10 @@ for (let i = 0; i < 3;i++){
 
 
 
-function printarNome (arrayDeAlunos,selecionado) {
+/* function printarNome (arrayDeAlunos,selecionado) {
   for (let i = 0; i < selecionado;i++){
-      return(arrayDeAlunos[i].name); 
+      console.log(arrayDeAlunos[i].name); 
   }
 }
 
-console.log(printarNome(alunos,3));
+console.log(printarNome(alunos,3)); */
