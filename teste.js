@@ -79,7 +79,7 @@ console.log(smash(["Ola" ,"Eu" ,"sou" ,"o" ,"Edu"]));  */
 
   //--------------------------------------------------------------------------------------
     
-  function duckDuckGoose(players, goose) {
+/*   function duckDuckGoose(players, goose) {
 
     for(let index = 0; index < players.length; index++){
         if (goose === 1) {
@@ -87,7 +87,7 @@ console.log(smash(["Ola" ,"Eu" ,"sou" ,"o" ,"Edu"]));  */
         }
       return players[goose].name
     }
-  }
+  } */
   
  
 /*   function duckDuckGoose(players, goose) {
@@ -98,7 +98,7 @@ console.log(smash(["Ola" ,"Eu" ,"sou" ,"o" ,"Edu"]));  */
   } */
 
   //console.log(duckDuckGoose(['A','B','C','D'],1));
-  console.assert(duckDuckGoose(['A','B','C','D'],1),"A")
+  //console.assert(duckDuckGoose(['A','B','C','D'],1),"A")
 
   //-------------------------------------------------------------------------------------
   
@@ -135,7 +135,7 @@ console.log(smash(["Ola" ,"Eu" ,"sou" ,"o" ,"Edu"]));  */
 
   //funcionou meio estranho
 
-     function well(x){
+/*      function well(x){
     let contadorDeGood = 0
 
     for (let i = 0; i < x.length; i++) {
@@ -152,7 +152,7 @@ console.log(smash(["Ola" ,"Eu" ,"sou" ,"o" ,"Edu"]));  */
       return 'I smell a series!'
     }
   }
- console.log(well(["bad","good","bad","bad","good","good"]));   
+ console.log(well(["bad","good","bad","bad","good","good"]));    */
 
 //--------------------------------------------------------------------------------
 
@@ -223,3 +223,50 @@ for (let i = 0; i < trues.length; i++) {
 }
 
 console.log(contador2); */
+
+
+const alunos = [{name:"a"}, {name:"b"}, {name:"c"}, {name:"d"}, {name:"e"}, {name:"f"}, {name:"g"}]
+
+/* for (let i = 0; i < alunos.length;i++){
+  console.log(alunos[i]);
+} */
+
+/* alunos.forEach(aluno => {
+  console.log(aluno);
+}); */
+
+/* var contadorDeAlunos = 0
+
+while (contadorDeAlunos < alunos.length){
+  console.log(alunos[contadorDeAlunos]);
+  contadorDeAlunos++
+} */
+
+/* for (let i = 0; i < alunos.length;i++){
+  console.log(alunos[i].name);
+} */
+
+/* alunos.forEach(aluno => {
+  console.log(aluno.name);
+});  */
+
+//var contadorDeAlunos = 0
+
+/* while (contadorDeAlunos < alunos.length){
+  console.log(alunos[contadorDeAlunos].name);
+  contadorDeAlunos++
+} */
+
+for (let i = 0; i < 3;i++){
+  console.log(alunos[i].name);
+}
+
+
+
+function printarNome (arrayDeAlunos,selecionado) {
+  for (let i = 0; i < selecionado;i++){
+      return(arrayDeAlunos[i].name); 
+  }
+}
+
+console.log(printarNome(alunos,3));
