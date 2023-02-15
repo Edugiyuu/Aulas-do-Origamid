@@ -297,7 +297,7 @@ while (contadorDeAlunos < alunos.length){
 
 console.log(alunosPares(alunos)); */
 
-function simOuNao(arrayDeAlunos,selecionado) {
+/* function simOuNao(arrayDeAlunos,selecionado) {
   for (let i = 0; i < selecionado;i++){
     if (i % 2 == 0) {
       console.log(`Sim ${arrayDeAlunos[i].name}`); 
@@ -307,5 +307,22 @@ function simOuNao(arrayDeAlunos,selecionado) {
   }
 }
 
-console.log(simOuNao(alunos,5));
+console.log(simOuNao(alunos,5)); */
+
+function MenorOuMaior(arrayDeAlunos,numero) {
+
+const x = arrayDeAlunos.length
+
+  for (let i = 0; i < arrayDeAlunos.length;i++){
+    if(x > numero){
+      return `É menor do que o tamanho total de alunos ${x}`; 
+    }else if (x < numero){
+      return `Maior que o tamanho total de alunos ${x}`; 
+    }else{
+      return `Igual ao numero de alunos ${x}`
+    }
+  }
+}
+
+console.log(MenorOuMaior(alunos,4));
 
