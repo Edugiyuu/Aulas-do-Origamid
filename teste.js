@@ -257,16 +257,55 @@ while (contadorDeAlunos < alunos.length){
   contadorDeAlunos++
 } */
 
-for (let i = 0; i < 3;i++){
+/* for (let i = 0; i < 2;i++){
   console.log(alunos[i].name);
-}
+} */
 
 
+/*   function printarNome (arrayDeAlunos,selecionado) {
+    return arrayDeAlunos[selecionado -1].name
+} */
 
-/*  function printarNome (arrayDeAlunos,selecionado) {
-  for (let i = 0; i < selecionado;i++){
-      return arrayDeAlunos[i].name; 
+/* function printarNome (arrayDeAlunos,selecionado) {
+  return arrayDeAlunos.length - selecionado
+} */
+
+/* function printarNome(arrayDeAlunos,selecionado) {
+   const x = arrayDeAlunos.length - selecionado
+   return arrayDeAlunos[x -1].name
+} */
+
+/* function printarNome(arrayDeAlunos,selecionado) {
+  return arrayDeAlunos[arrayDeAlunos.length - selecionado -1].name
+} */
+
+/* function alunosPares(arrayDeAlunos) {
+  for (let i = 0; i < arrayDeAlunos.length;i++){
+    if (i % 2 == 0) {
+      console.log(arrayDeAlunos[i].name); 
+    }
+  }
+} */
+
+/* function alunosPares(arrayDeAlunos) {
+  for (let i = 0; i < arrayDeAlunos.length;i++){
+    if (i % 2 !== 0) {
+      console.log(arrayDeAlunos[i].name); 
+    }
   }
 }
 
-console.log(printarNome(alunos,3));  */
+console.log(alunosPares(alunos)); */
+
+function simOuNao(arrayDeAlunos,selecionado) {
+  for (let i = 0; i < selecionado;i++){
+    if (i % 2 == 0) {
+      console.log(`Sim ${arrayDeAlunos[i].name}`); 
+    }else{
+      console.log(`Não ${arrayDeAlunos[i].name}`);
+    }
+  }
+}
+
+console.log(simOuNao(alunos,5));
+
