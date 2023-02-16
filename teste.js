@@ -275,9 +275,11 @@ while (contadorDeAlunos < alunos.length){
    return arrayDeAlunos[x -1].name
 } */
 
-/* function printarNome(arrayDeAlunos,selecionado) {
-  return arrayDeAlunos[arrayDeAlunos.length - selecionado -1].name
-} */
+/*  function printarNome(arrayDeAlunos,selecionado) {
+  return arrayDeAlunos[arrayDeAlunos.length - selecionado ].name
+} 
+
+console.log(printarNome(alunos,4)); */
 
 /* function alunosPares(arrayDeAlunos) {
   for (let i = 0; i < arrayDeAlunos.length;i++){
@@ -309,20 +311,46 @@ console.log(alunosPares(alunos)); */
 
 console.log(simOuNao(alunos,5)); */
 
-function MenorOuMaior(arrayDeAlunos,numero) {
+/*  function MenorOuMaior(arrayDeAlunos,numero) {
 
-const x = arrayDeAlunos.length
-
-  for (let i = 0; i < arrayDeAlunos.length;i++){
-    if(x > numero){
-      return `É menor do que o tamanho total de alunos ${x}`; 
-    }else if (x < numero){
-      return `Maior que o tamanho total de alunos ${x}`; 
+    if(arrayDeAlunos.length > numero){
+      return `É menor do que o tamanho total de alunos ${arrayDeAlunos.length}`; 
+    }else if (arrayDeAlunos.length < numero){
+      return `Maior que o tamanho total de alunos ${arrayDeAlunos.length}`; 
     }else{
-      return `Igual ao numero de alunos ${x}`
+      return `Igual ao numero de alunos ${arrayDeAlunos.length}`
     }
-  }
+  
 }
 
-console.log(MenorOuMaior(alunos,4));
+console.log(MenorOuMaior(alunos,4));  */
+
+/*  function MenorOuMaior(arrayDeAlunos,numero) {
+
+    for (let i = 0; i < arrayDeAlunos.length;i++){
+      console.log( `${arrayDeAlunos[i].name} ${i + numero}`);
+    }
+  }
+
+  console.log(MenorOuMaior(alunos,5));   */
+
+/*   class Player {
+    constructor(name) {
+        this.name = name;
+    }
+}
+  let ex_names = ["a", "b", "c", "d", "c", "e", "f", "g", "h", "z"];
+  let alunos = ex_names.map((n) => new Player(n)); */
+
+  function duckDuckGoose(players, goose) {
+    console.log(players.length);
+    while (players.length < goose) {
+      goose = goose - players.length
+      console.log(goose);
+  }
+  return players[goose -1].name
+    
+  }
+
+  console.log(duckDuckGoose(alunos,3)); 
 
