@@ -5,8 +5,10 @@ console.log(aleatorio);
 
 // Retorne o maior número da lista abaixo
 const numeros = '4, 5, 20, 8, 9';
+const arrayNumeros = numeros.split(',')
+const numeroMaximo = Math.max(...arrayNumeros);
 
-const arrayNumeros = numeros.split(', +6')
+console.log(numeroMaximo);
 
 // Crie uma função para limpar os preços
 // e retornar os números com centavos arredondados

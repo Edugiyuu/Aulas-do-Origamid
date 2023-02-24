@@ -225,7 +225,7 @@ for (let i = 0; i < trues.length; i++) {
 console.log(contador2); */
 
 
-const alunos = [{name:"a"}, {name:"b"}, {name:"c"}, {name:"d"}, {name:"e"}, {name:"f"}, {name:"g"}]
+//const alunos = [{name:"a"}, {name:"b"}, {name:"c"}, {name:"d"}, {name:"e"}, {name:"f"}, {name:"g"}]
 
 /* for (let i = 0; i < alunos.length;i++){
   console.log(alunos[i]);
@@ -342,15 +342,15 @@ console.log(MenorOuMaior(alunos,4));  */
   let ex_names = ["a", "b", "c", "d", "c", "e", "f", "g", "h", "z"];
   let alunos = ex_names.map((n) => new Player(n)); */
 
+  const alunos = [{name:"a"}, {name:"b"}, {name:"c"}, {name:"d"}, {name:"e"}, {name:"f"}, {name:"g"}]
+
   function duckDuckGoose(players, goose) {
-    console.log(players.length);
     while (players.length < goose) {
       goose = goose - players.length
-      console.log(goose);
   }
   return players[goose -1].name
     
   }
 
-  console.log(duckDuckGoose(alunos,3)); 
+  console.log(duckDuckGoose(alunos,10)); 
 
