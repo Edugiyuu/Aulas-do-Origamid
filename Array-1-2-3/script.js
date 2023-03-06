@@ -1,4 +1,4 @@
-const instrumentos = ['Guitarra', 'Baixo', 'Violão'];
+/* const instrumentos = ['Guitarra', 'Baixo', 'Violão']; */
 const precos = [49, 99, 69, 89];
 
 const dados = [new String('Tipo 1'), ['Carro', 'Portas', {cor: 'Azul', preco: 2000}], function andar(nome) { console.log(nome) }];
@@ -11,3 +11,31 @@ carros [3] = 'Kia';
 carros [20] = 'Kia';
 
 console.log(carros.length);
+
+const li = document.querySelectorAll('li');
+
+const arrayLi = Array.from(li)
+
+const obj = {
+    0: 'Andre',
+    1: 'Rafael',
+    2: 'Teste',
+    length: 4,
+}
+
+const objArray = Array.from(obj);
+
+console.log(li);
+console.log(arrayLi);
+
+const frutas = ['Banana','Pêra'['Uva roxa','Uva Verde']]
+
+console.log(frutas[1].length);
+
+const instrumentos = ['Guitarra','Baixo','Violão'];
+instrumentos.sort();
+
+const idades = [32,21,33,43,1,12,8];
+
+console.log(instrumentos);
+console.log(idades);
